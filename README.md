@@ -49,7 +49,7 @@ All algorithms clearly exhibit the average runtime complexity we expect them to!
 
 This experiment tests the same algorithms on nearly sorted arrays where 5% / 20% of the elements are randomly shuffled.
 
-**Key Findings:**
+**Observations:**
 - **Bubble Sort** maintains a general O(n²) behavior but displays a improvement as a larger portions of the array are sorted.
 - **Merge Sort** remains unchanged, as it always divides and merges regardless of input order. Its time complexity is strictly O(nlogn) in all cases.
 - **Quick Sort** performs only slightly better to the random case. Standard Quick Sort can degrade to O(n²) on already sorted arrays depending on pivot selection but choosing the middle element as the pivot (as implemented here)
