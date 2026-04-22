@@ -54,8 +54,8 @@ def quick_sort(arr):
 def get_algorithm(algo_id):
     algorithms = {
         1: ("Bubble Sort",bubble_sort),
-        2: ("Merge Sort",merge_sort),
-        3: ("Quick Sort",quick_sort),
+        4: ("Merge Sort",merge_sort),
+        5: ("Quick Sort",quick_sort),
     }
     return algorithms[algo_id]
 
@@ -199,7 +199,7 @@ def plot_results(results, sizes, algo_ids, title, filename):
 
 def main():
     parser = argparse.ArgumentParser(description='Sorting Algorithm Comparison')
-    parser.add_argument('-a', '--algorithms', nargs='+', type=int, default=[1, 2, 3], help='Algorithm IDs (1=Bubble, 2=Merge, 3=Quick)')
+    parser.add_argument('-a', '--algorithms', nargs='+', type=int, default=[1, 4, 5], help='Algorithm IDs (1=Bubble, 4=Merge, 5=Quick)')
 
     parser.add_argument('-s', '--sizes', nargs='+', type=int, default=[512*i for i in range(16)], help='Array sizes to test')
 
